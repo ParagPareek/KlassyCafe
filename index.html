@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klassy Cafe</title>
+    <style>
+        * {
+            margin: 0%;
+        }
+
+        .nav {
+
+            height: 80px;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            top: 0px;
+        }
+
+        .nav-img {
+            padding: 10px;
+            width: 100%;
+        }
+
+        .nav-text {
+
+            display: flex;
+            margin-right: 25px;
+        }
+
+        .nav-text-sub {
+
+
+            padding: 20px;
+            color: #2a2a2a;
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .nav-text-sub:hover {
+            color: #ff5733;
+        }
+
+        /*-----------------------------------------------------------------------*/
+        .big-img {
+            display: flex;
+
+            height: 600px;
+        }
+
+        .big-img-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/top-left-bg.jpg);
+        }
+
+        .big-img-1-1 {
+
+
+            width: 280px;
+            height: 220px;
+
+        }
+
+        .big-img-1-1-1 {
+            margin-top: 2px;
+            background-color: aqua;
+            width: 120px;
+            height: 20px;
+            font-size: 13px;
+            color: #fb5849;
+            background-color: #fff;
+            padding: 12px 25px;
+            display: inline-block;
+            border-radius: 3px;
+            font-weight: 600;
+            transition: all .3s;
+        }
+
+        .big-img-2 {
+            width: 60%;
+        }
+
+        .big-img-2 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        h4 {
+            font-family: 'Dancing Script', cursive;
+            color: #fff;
+            font-size: 54px;
+            font-weight: 700;
+        }
+
+        h6 {
+            font-size: 15px;
+
+            font-weight: 600;
+            color: #fff;
+            letter-spacing: 3px;
+            margin-top: 5px;
+        }
+
+        /*----------------------------------------------------------------------------------*/
+        .main {
+            display: flex;
+            height: 610px;
+            width: 100%;
+
+        }
+
+        .main1 {
+            width: 50%;
+            height: 100%;
+        }
+
+        .main1-1 {
+
+            width: 90%;
+
+            height: 55%;
+        }
+
+        .main1-1 h6 {
+
+            position: relative;
+            font-size: 15px;
+            color: #fb5849;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding-left: 100px;
+        }
+
+        .main1-1 h2 {
+
+            line-height: 40px;
+            margin-top: 20px;
+            margin-bottom: 25px;
+            font-size: 30px;
+            font-weight: 900;
+            color: #2a2a2a;
+            padding-left: 100px;
+        }
+
+        .main1-1 p {
+            font-size: 14px;
+            line-height: 25px;
+            color: #2a2a2a;
+            padding-left: 100px;
+        }
+
+        .main1-2 {
+            padding-left: 100px;
+        }
+
+        .main1-2 img {
+            padding: 10px;
+            width: 25%;
+        }
+
+        .main2 {
+
+            width: 50%;
+            height: 100%;
+        }
+
+        .main2 img {
+            padding: 50px;
+            width: 70%;
+            height: 80%;
+        }
+
+        /*------------------------------------------------------------------------------------------------------------*/
+        .body1 {
+            box-sizing: border-box;
+            height: 670px;
+            background-color: #fffafa;
+            width: 100%;
+            position: relative;
+
+        }
+
+        .body1-1 {
+            box-sizing: border-box;
+            padding-top: 80px;
+            padding-left: 80px;
+            height: 35%;
+            width: 30%;
+
+        }
+
+        .body1-1 h6 {
+
+
+            font-size: 15px;
+            color: #fb5849;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+        }
+
+        .body1-1 h6::before{
+
+            content: "";
+            border: 2px solid red;
+            position: absolute;
+            width: 30px;
+            left: 40px;
+            top: 90px;
+            border-radius: 8px;
+
+        }
+
+        .body1-1 h2 {
+
+            line-height: 40px;
+            margin-top: 20px;
+            margin-bottom: 25px;
+            font-size: 30px;
+            font-weight: 900;
+            color: #2a2a2a;
+        }
+
+        .body1-2 {
+            display: flex;
+            justify-content: space-between;
+
+            height: 65%;
+            width: 100%;
+
+
+        }
+
+        .body1-2-1 {
+            background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/menu-item-02.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 2px solid red;
+            width: 17%;
+            height: 80%;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
+        }
+
+        .body1-2-2 {
+
+            background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/menu-item-05.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 2px solid red;
+            width: 17%;
+            height: 80%;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
+        }
+
+        .body1-2-3 {
+
+            background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/menu-item-04.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 2px solid red;
+            width: 17%;
+            height: 80%;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
+        }
+
+        .body1-2-4 {
+
+            background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/menu-item-01.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 2px solid red;
+            width: 17%;
+            height: 80%;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
+        }
+
+        .body1-2-5 {
+
+            background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/menu-item-03.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 2px solid red;
+            width: 17%;
+            height: 80%;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
+        }
+
+        .body1-2-1-1 {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            background-color: #fb5849;
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+            border-radius: 3px;
+            text-align: center;
+            line-height: 70px;
+        }
+
+        /*---------------------------------------------------------------------------------------------------------------------------------*/
+
+        .about {
+
+            height: 715px;
+            width: 100%;
+
+        }
+
+        .e {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            height: 230px;
+            width: 100%;
+
+        }
+
+        .about-1 {
+
+            height: 200px;
+            width: 20%;
+        }
+
+        .about-1 h6 {
+
+            text-align: center;
+            font-size: 18px;
+            color: #fb5849;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+        }
+
+        .about-1 h2 {
+
+            line-height: 40px;
+            margin-top: 20px;
+            margin-bottom: 25px;
+            font-size: 30px;
+            font-weight: 900;
+            color: #2a2a2a;
+        }
+
+        .about-2 {
+
+            display: flex;
+            justify-content: space-evenly;
+            height: 500px;
+            width: 100%;
+
+        }
+
+        .about-2-1 {
+            height: 400px;
+            width: 26%;
+            border: 1px solid #afafaf;
+        }
+
+        .about-2-1-1 img {
+            padding: 4px;
+            width: 98%;
+        }
+
+        .about-2-1-2 h4 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #2a2a2a;
+            text-align: center;
+        }
+
+        .about-2-1-2 h4:hover {
+            color: #ff5733;
+        }
+
+        .about-2-1-2 h6 {
+            font-size: 15px;
+            font-weight: 600;
+            color: #2a2a2a;
+            text-align: center;
+        }
+
+        /*---------------------------------------------------------------------------------------------------------------------------------*/
+        .form {
+            display: flex;
+            height: 650px;
+            width: 100%;
+            background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/reservation-bg.jpg);
+        }
+
+        .form1 {
+            width: 50%;
+            height: 100%;
+
+        }
+
+        .extra {
+            height: 10%;
+            width: 100%;
+        }
+
+        .form1-1 {
+
+
+            height: 30%;
+            width: 100%;
+        }
+
+        .form1-1 h6 {
+            color: #fff;
+            position: relative;
+            font-size: 15px;
+
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding-left: 100px;
+        }
+
+        .form1-1 h2 {
+
+            line-height: 40px;
+            margin-top: 20px;
+            margin-bottom: 25px;
+            font-size: 30px;
+            font-weight: 900;
+            color: #fff;
+            padding-left: 100px;
+        }
+
+        .form1-1 p {
+            font-size: 14px;
+            line-height: 25px;
+            color: #fff;
+            padding-left: 100px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 50%;
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        .box1 {
+            background-color: #fff;
+            width: 35%;
+            height: 45%;
+            position: relative;
+
+        }
+
+        .box1 h4 {
+            font-size: 20px;
+            font-weight: 700;
+            color: black;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+
+        .box1 h6 {
+            font-size: 15px;
+            font-weight: 700;
+            color: black;
+            text-align: center;
+
+        }
+
+        .box2 {
+            background-color: #fff;
+            width: 35%;
+            height: 45%;
+
+        }
+
+        .form2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 100%;
+
+        }
+
+        .form2-1 {
+            box-sizing: border-box;
+            width: 75%;
+            background-color: #fff;
+            height: 85%;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 30px;
+            color: #2a2a2a;
+            margin-bottom: 30px;
+            padding-top: 30px;
+        }
+
+        .form2-2 {
+            margin-top: 25px;
+            height: 80%;
+            width: 99%;
+
+        }
+
+        .form2-2 input {
+
+            margin: 5px;
+            margin-top: 20px;
+            color: #2a2a2a;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            width: 42%;
+            height: 40px;
+            border-radius: 5px;
+
+
+        }
+
+        #message {
+            margin-top: 10px;
+            color: #2a2a2a;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            width: 90%;
+            height: 150px;
+            border-radius: 5px;
+
+        }
+
+        .form2-2 button {
+            margin-top: -10px;
+            font-size: 13px;
+            color: #fff;
+            background-color: #fb5849;
+            padding: 12px 25px;
+            width: 90%;
+            box-shadow: none;
+            border: none;
+            display: inline-block;
+            border-radius: 3px;
+            font-weight: 600;
+            transition: all .3s;
+        }
+
+        /*---------------------------------------------------------------------------------------------------------------------------------*/
+        .main-menue {
+            border: 2px solid red;
+            height: 850px;
+            width: 100%;
+        }
+
+        .main_extra {
+
+            height: 10%;
+            width: 100%;
+        }
+
+        .main-menu-text {
+
+            height: 23%;
+            width: 100%;
+        }
+
+        .main-menu-text h6 {
+            text-align: center;
+
+            font-size: 18px;
+            color: #fb5849;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+        }
+
+        .main-menu-text h2 {
+            line-height: 40px;
+            margin-top: 20px;
+            margin-bottom: 25px;
+            font-size: 30px;
+            font-weight: 900;
+            color: #2a2a2a;
+            text-align: center;
+        }
+
+        .menu-img {
+            display: flex;
+
+            height: 13%;
+            width: 100%;
+            justify-content: center;
+
+        }
+
+        .menu-img-1 {
+            margin-left: 30px;
+
+            height: 75%;
+            width: 8%;
+        }
+
+        .menu-img-1-1 {
+
+            height: 70%;
+            width: 100%;
+            text-align: center;
+        }
+
+        .menu-img-1 h6 {
+            color: #fb5849;
+            position: relative;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .list {
+            border: 2px solid red;
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+
+        }
+
+        .list-1 {
+            border: 2px solid blue;
+            height: 23%;
+            width: 43%;
+            display: flex;
+
+        }
+
+        .list-1-1 {
+            border: 2px solid red;
+            height: 100%;
+            width: 25%;
+        }
+
+        .list-1-2 {
+            border: 2px solid red;
+            height: 100%;
+            width: 60%;
+        }
+
+        .list-1-2 h4 {
+            padding-top: 10px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #2a2a2a;
+            margin-bottom: 10px;
+            margin-right: 100px;
+        }
+
+        .list-1-2 p {
+            font-size: 18px;
+            line-height: 25px;
+            color: #2a2a2a;
+        }
+
+        .list-1-3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid red;
+            height: 100%;
+            width: 15%;
+        }
+
+        /*-----------------------------------------------------------------------------------------------*/
+        .fotter {
+            display: flex;
+            background-color: #fb5849;
+            height: 170px;
+            width: 100%;
+        }
+
+        .fotter-1-1 {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #fff;
+            margin: 10px;
+        }
+
+        .fotter-1 {
+            width: 33%;
+            height: 99%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fotter-1 img {
+            height: 40%;
+            width: 40%;
+        }
+
+        .fotter-1 h5 {
+
+            color: #fff;
+            font-size: 16px;
+            text-align: right;
+        }
+
+        .icon-box{
+
+            height: 100px;
+            width: 100px;
+            background-color: #ff5733;
+            border-radius: 200px;
+            position: absolute;
+            top: -50px;
+            left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav-img">
+            <img src="https://themewagon.github.io/klassy-cafe/assets/images/klassy-logo.png" alt="">
+        </div>
+        <div class="nav-text">
+            <div class="nav-text-sub">Home</div>
+            <div class="nav-text-sub">About</div>
+            <div class="nav-text-sub">Menu</div>
+            <div class="nav-text-sub">Chefs</div>
+            <div class="nav-text-sub">Features</div>
+            <div class="nav-text-sub" style="width: 100px;">Contact Us</div>
+        </div>
+    </div>
+
+    <div class="big-img">
+        <div class="big-img-1">
+            <div class="big-img-1-1">
+                <h4>KlassyCafe</h4>
+                <h6>THE BEST EXPERIENCE</h6>
+                <div class="big-img-1-1-1"> Make A Reservation </div>
+            </div>
+        </div>
+        <div class="big-img-2"><img src="https://themewagon.github.io/klassy-cafe/assets/images/slide-02.jpg" alt="">
+        </div>
+    </div>
+    <!------------------------------------------------------------------------------------------------------------------------------>
+    <br>
+
+    <div class="main">
+        <div class="main1">
+            <div class="main1-1">
+                <h6>About Us</h6>
+                <h2>We Leave A Delicious<br> Memory For You</h2>
+                <p>Klassy Cafe is one of the best restaurant HTML templates with Bootstrap v4.5.2 CSS framework. You can
+                    download and feel free to use this
+                    website template layout for your restaurant business. You are allowed to use this template for
+                    commercial purposes.<br> <br>
+
+                    You are NOT allowed to redistribute the template ZIP file on any template donwnload website. Please
+                    contact us for more information.</p>
+            </div>
+            <div class="main1-2"><img src="https://themewagon.github.io/klassy-cafe/assets/images/about-thumb-01.jpg"
+                    alt="">
+                <img src="https://themewagon.github.io/klassy-cafe/assets/images/about-thumb-02.jpg" alt="">
+                <img src="https://themewagon.github.io/klassy-cafe/assets/images/about-thumb-03.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="main2"><img src="https://themewagon.github.io/klassy-cafe/assets/images/about-video-bg.jpg" alt="">
+        </div>
+    </div>
+    <!-- -------------------------------------------------------------------------------------------------------------------------->
+    <div class="body1">
+        <div class="body1-1">
+            <h6>OUR MENU</h6>
+            <h2>Our selection of cakes with quality taste</h2>
+        </div>
+        <div class="body1-2">
+            <div class="body1-2-1">
+                <div class="body1-2-1-1">$22</div>
+            </div>
+            <div class="body1-2-2">
+                <div class="body1-2-1-1">$34</div>
+            </div>
+            <div class="body1-2-3">
+                <div class="body1-2-1-1">$52</div>
+            </div>
+            <div class="body1-2-4">
+                <div class="body1-2-1-1">$29</div>
+            </div>
+            <div class="body1-2-5">
+                <div class="body1-2-1-1">$43</div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------------------------------------------------------------------------------------------------->
+    <div class="about">
+        <div class="e">
+            <div class="about-1">
+                <h6>OUR CHEFS</h6>
+                <h2>We offer the best ingredients for you</h2>
+            </div>
+        </div>
+        <div class="about-2">
+            <div class="about-2-1">
+                <div class="about-2-1-1"><img src="https://themewagon.github.io/klassy-cafe/assets/images/chefs-01.jpg"
+                        alt=""></div>
+                <div class="about-2-1-2">
+                    <h4>Randy Walker</h4>
+                    <h6>Pastry Chef</h6>
+                </div>
+            </div>
+            <div class="about-2-1">
+                <div class="about-2-1-1"><img src="https://themewagon.github.io/klassy-cafe/assets/images/chefs-02.jpg"
+                        alt=""></div>
+                <div class="about-2-1-2">
+                    <h4>David Martin
+                    </h4>
+                    <h6>Cookie Chef</h6>
+                </div>
+            </div>
+            <div class="about-2-1">
+                <div class="about-2-1-1"><img src="https://themewagon.github.io/klassy-cafe/assets/images/chefs-03.jpg"
+                        alt=""></div>
+                <div class="about-2-1-2">
+                    <h4>Peter Perkson</h4>
+                    <h6>Pancake Chef</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------------------------------------------------------------------------->
+    <div class="form">
+        <div class="form1">
+            <div class="extra"></div>
+            <div class="form1-1">
+                <h6>CONTACT US</h6>
+                <h2>Here You Can Make A Reservation <br>Or Just walkin to our cafe</h2>
+                <p>Donec pretium est orci, non vulputate arcu hendrerit a. Fusce a eleifend riqsie, namei sollicitudin
+                    urna diam, sed
+                    commodo purus porta ut.</p>
+            </div>
+            <div class="box">
+                <div class="box1">
+                    <div class="icon-box"></div>
+                    <h4>Phone Number</h4>
+                    <h6>080-090-0990
+                    </h6>
+                    <h6>080-090-0880</h6>
+                </div>
+                <div class="box1">
+                    <h4>Emails</h4>
+                    <h6>hello@company.com</h6>
+                    <h6>info@company.com</h6>
+                </div>
+            </div>
+        </div>
+        <div class="form2">
+            <div class="form2-1">Table Reservation
+                <div class="form2-2">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email Address">
+                    <input type="number" placeholder="Phone Number">
+                    <input type="number" placeholder="Number Of Guest">
+                    <input type="text" placeholder="dd/mm/yyyy">
+                    <input type="text" placeholder="Time">
+                    <textarea name="message" rows="6" id="message" placeholder="Message" required=""></textarea>
+                    <button type="submit" id="form-submit" class="main-button-icon">Make A Reservation</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------------------------------------------------------------------------------->
+    <div class="main-menue">
+        <div class="main_extra"></div>
+        <div class="main-menu-text">
+            <h6>KLASSY WEEK </h6>
+            <h2>This Week’s Special <br>Meal Offers</h2>
+        </div>
+        <div class="menu-img">
+            <div class="menu-img-1">
+                <div class="menu-img-1-1"><img
+                        src="https://themewagon.github.io/klassy-cafe/assets/images/tab-icon-01.png" alt=""></div>
+                <h6>Breakfast</h6>
+            </div>
+            <div class="menu-img-1">
+                <div class="menu-img-1-1"><img
+                        src="https://themewagon.github.io/klassy-cafe/assets/images/tab-icon-02.png" alt=""></div>
+                <h6>Lunch</h6>
+            </div>
+            <div class="menu-img-1">
+                <div class="menu-img-1-1"><img
+                        src="https://themewagon.github.io/klassy-cafe/assets/images/tab-icon-03.png" alt=""></div>
+                <h6>Dinner</h6>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list-1">
+                <div class="list-1-1"><img src="https://themewagon.github.io/klassy-cafe/assets/images/tab-item-01.png"
+                        alt=""></div>
+                <div class="list-1-2">
+                    <h4>Fresh Chicken Salad</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur <br> koit adipiscing elit, sed do.</p>
+                </div>
+                <div class="list-1-3">
+                    <div class="body1-2-1-1">$22</div>
+                </div>
+            </div>
+            <div class="list-1">
+                <div class="list-1-1"><img src="https://themewagon.github.io/klassy-cafe/assets/images/tab-item-04.png"
+                        alt=""></div>
+                <div class="list-1-2">
+                    <h4>Eggs Omelette</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur <br> koit adipiscing elit, sed do.</p>
+                </div>
+                <div class="list-1-3">
+                    <div class="body1-2-1-1">$28</div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <!----------------------------------------------------------------------------------------------------------------->
+    <div class="fotter">
+        <div class="fotter-1">
+            <div class="fotter-1-1"></div>
+            <div class="fotter-1-1"></div>
+            <div class="fotter-1-1"></div>
+            <div class="fotter-1-1"></div>
+        </div>
+        <div class="fotter-1"><img src="https://themewagon.github.io/klassy-cafe/assets/images/white-logo.png" alt="">
+        </div>
+        <div class="fotter-1">
+            <h5>Copyright Klassy Cafe Co. <br> Design:TemplateMo</h5>
+        </div>
+    </div>
+</body>
+
+</html>
